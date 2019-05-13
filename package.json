@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thinkful-ei-dragonfly/lucas_robert_webpack_shoppinglist/issues"
   },
-  "homepage": "https://github.com/thinkful-ei-dragonfly/lucas_robert_webpack_shoppinglist#readme"
+  "homepage": "https://github.com/thinkful-ei-dragonfly/lucas_robert_webpack_shoppinglist#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  }
 }
