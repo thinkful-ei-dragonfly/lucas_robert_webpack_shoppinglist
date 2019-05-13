@@ -1,13 +1,13 @@
 // eslint-disable-next-line no-unused-vars
-const api = (function(){
-  const BASE_URL = 'https://thinkful-list-api.herokuapp.com/rich';
+// const api = (function(){
+  const BASE_URL = 'https://thinkful-list-api.herokuapp.com/lucas_robert';
 
   /**
-   * listApiFetch - Wrapper function for native `fetch` to standardize error handling. 
-   * @param {string} url 
-   * @param {object} options 
+   * listApiFetch - Wrapper function for native `fetch` to standardize error handling.
+   * @param {string} url
+   * @param {object} options
    * @returns {Promise} - resolve on all 2xx responses with JSON body
-   *                    - reject on non-2xx and non-JSON response with 
+   *                    - reject on non-2xx and non-JSON response with
    *                      Object { code: Number, message: String }
    */
   const listApiFetch = function(...args) {
@@ -31,8 +31,8 @@ const api = (function(){
         return res.json();
       })
       .then(data => {
-        // if error exists, place the JSON message into the error object and 
-        // reject the Promise with your error object so it lands in the next 
+        // if error exists, place the JSON message into the error object and
+        // reject the Promise with your error object so it lands in the next
         // catch.  IMPORTANT: Check how the API sends errors -- not all APIs
         // will respond with a JSON object containing message key
         if (error) {
@@ -77,10 +77,10 @@ const api = (function(){
     });
   };
 
-  return {
-    getItems,
-    createItem,
-    updateItem,
-    deleteItem,
+  export default {
+    getItems: getItems,
+    createItem: createItem,
+    updateItem: updateItem,
+    deleteItem: deleteItem,
   };
-}());
+// }());
